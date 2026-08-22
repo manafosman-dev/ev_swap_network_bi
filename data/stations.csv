@@ -1,0 +1,6 @@
+station_id,station_name,district,latitude,longitude,capacity,opening_date
+ST001,Adenta,Adenta Municipal,5.7049,-0.1682,24,2024-01-15
+ST002,Haatso,Ga East,5.6704,-0.1988,20,2024-03-01
+ST003,Spintex,Tema West,5.6256,-0.1024,28,2023-11-10
+ST004,Kaneshie,Accra Metro,5.5611,-0.2347,24,2024-02-05
+ST005,Abelenkpe,Ayawaso West,5.6096,-0.1967,20,2024-04-18
