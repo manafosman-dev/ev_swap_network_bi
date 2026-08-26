@@ -1,4 +1,4 @@
-## KPI Definitions
+# KPI Definitions
 
 ### Total Swaps
 Number of successful battery swap transactions.
@@ -23,3 +23,21 @@ Percentage of service events that resulted in a successful battery swap.
 
 ### Failed Service Events
 Number of service events where the battery swap was unsuccessful.
+
+
+
+# Findings
+
+- Total network swaps: **30,000**
+- Total revenue: approximately **GHS 1.07M**
+- Average wait time: approximately **3.9 minutes**
+- Battery shortage rate: approximately **5.9%**
+- Total downtime: approximately **116.2 hours**
+- Adenta recorded the highest transaction volume.
+- Adenta also recorded the highest downtime.
+- Demand shows a strong evening peak, especially around the early evening period.
+
+
+
+
+

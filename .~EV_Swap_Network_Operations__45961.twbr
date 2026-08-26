@@ -1,0 +1,3144 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='909f4f439a072b20cc8e836391d6c95d141e6defae6d363bb4f2b447e695130b' _.fcp.WorkbookFingerprinting.true...creator-author-id='909f4f439a072b20cc8e836391d6c95d141e6defae6d363bb4f2b447e695130b' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='83b84df0fc3c5cd0284d9a0ab394645822756c638067445a89956d48773af2e8' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='83b84df0fc3c5cd0284d9a0ab394645822756c638067445a89956d48773af2e8' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='EV_Swap_Network_Operations' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='stations' inline='true' name='federated.0ef48fx10sndh71f43lm41uj98yx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stations' name='textscan.05d0l4c1dsft1712lc5uz0kfjy5b'>
+            <connection class='textscan' directory='/Users/manafosman/Documents/my_documents/My_Projects/Data_Science /ev_swap_network_bi/data' filename='stations.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.05d0l4c1dsft1712lc5uz0kfjy5b' name='stations.csv' table='[stations#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='station_id' ordinal='0' />
+            <column datatype='string' name='station_name' ordinal='1' />
+            <column datatype='string' name='district' ordinal='2' />
+            <column datatype='real' name='latitude' ordinal='3' />
+            <column datatype='real' name='longitude' ordinal='4' />
+            <column datatype='integer' name='capacity' ordinal='5' />
+            <column datatype='date' name='opening_date' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>station_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[station_id]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>station_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stations.csv_1E9112A23166464E95DA60004D4E470A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>station_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[station_name]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>station_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stations.csv_1E9112A23166464E95DA60004D4E470A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[district]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>district</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stations.csv_1E9112A23166464E95DA60004D4E470A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stations.csv_1E9112A23166464E95DA60004D4E470A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stations.csv_1E9112A23166464E95DA60004D4E470A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capacity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capacity]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>capacity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stations.csv_1E9112A23166464E95DA60004D4E470A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opening_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[opening_date]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>opening_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stations.csv_1E9112A23166464E95DA60004D4E470A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='stations.csv' datatype='table' name='[__tableau_internal_object_id__].[stations.csv_1E9112A23166464E95DA60004D4E470A]' role='measure' type='quantitative' />
+      <column caption='Capacity' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+      <column caption='District' datatype='string' name='[district]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Opening Date' datatype='date' name='[opening_date]' role='dimension' type='ordinal' />
+      <column caption='Station Id' datatype='string' name='[station_id]' role='dimension' type='nominal' />
+      <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_0g68jpp0jtgn1p14z6snc1w9t2ea.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>station_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[station_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>station_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>stations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>station_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[station_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>station_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>stations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>district</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[district]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>district</remote-alias>
+              <ordinal>2</ordinal>
+              <family>stations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>3</ordinal>
+              <family>stations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>4</ordinal>
+              <family>stations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>capacity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[capacity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>capacity</remote-alias>
+              <ordinal>5</ordinal>
+              <family>stations.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>opening_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[opening_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>opening_date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>stations.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='stations.csv' id='stations.csv_1E9112A23166464E95DA60004D4E470A'>
+            <properties context=''>
+              <relation connection='textscan.05d0l4c1dsft1712lc5uz0kfjy5b' name='stations.csv' table='[stations#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='station_id' ordinal='0' />
+                  <column datatype='string' name='station_name' ordinal='1' />
+                  <column datatype='string' name='district' ordinal='2' />
+                  <column datatype='real' name='latitude' ordinal='3' />
+                  <column datatype='real' name='longitude' ordinal='4' />
+                  <column datatype='integer' name='capacity' ordinal='5' />
+                  <column datatype='date' name='opening_date' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='swap_transactions' inline='true' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='swap_transactions' name='textscan.1bsx7fi1f0apmb12zjqs71dwd7hq'>
+            <connection class='textscan' directory='/Users/manafosman/Documents/my_documents/My_Projects/Data_Science /ev_swap_network_bi/data' filename='swap_transactions.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1bsx7fi1f0apmb12zjqs71dwd7hq' name='swap_transactions.csv' table='[swap_transactions#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='swap_id' ordinal='0' />
+              <column datatype='datetime' name='timestamp' ordinal='1' />
+              <column datatype='string' name='station_id' ordinal='2' />
+              <column datatype='real' name='battery_soc_returned' ordinal='3' />
+              <column datatype='real' name='battery_soc_issued' ordinal='4' />
+              <column datatype='real' name='wait_minutes' ordinal='5' />
+              <column datatype='real' name='swap_duration_minutes' ordinal='6' />
+              <column datatype='integer' name='batteries_available_before_swap' ordinal='7' />
+              <column datatype='string' name='station_status' ordinal='8' />
+              <column datatype='integer' name='downtime_minutes' ordinal='9' />
+              <column datatype='real' name='payment_amount' ordinal='10' />
+              <column datatype='string' name='payment_method' ordinal='11' />
+              <column datatype='string' name='motorcycle_type' ordinal='12' />
+              <column datatype='boolean' name='service_success' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1bsx7fi1f0apmb12zjqs71dwd7hq' name='stations.csv' table='[stations#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='station_id' ordinal='0' />
+              <column datatype='string' name='station_name' ordinal='1' />
+              <column datatype='string' name='district' ordinal='2' />
+              <column datatype='real' name='latitude' ordinal='3' />
+              <column datatype='real' name='longitude' ordinal='4' />
+              <column datatype='integer' name='capacity' ordinal='5' />
+              <column datatype='date' name='opening_date' ordinal='6' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[batteries_available_before_swap]' value='[swap_transactions.csv].[batteries_available_before_swap]' />
+          <map key='[battery_soc_issued]' value='[swap_transactions.csv].[battery_soc_issued]' />
+          <map key='[battery_soc_returned]' value='[swap_transactions.csv].[battery_soc_returned]' />
+          <map key='[capacity]' value='[stations.csv].[capacity]' />
+          <map key='[district]' value='[stations.csv].[district]' />
+          <map key='[downtime_minutes]' value='[swap_transactions.csv].[downtime_minutes]' />
+          <map key='[latitude]' value='[stations.csv].[latitude]' />
+          <map key='[longitude]' value='[stations.csv].[longitude]' />
+          <map key='[motorcycle_type]' value='[swap_transactions.csv].[motorcycle_type]' />
+          <map key='[opening_date]' value='[stations.csv].[opening_date]' />
+          <map key='[payment_amount]' value='[swap_transactions.csv].[payment_amount]' />
+          <map key='[payment_method]' value='[swap_transactions.csv].[payment_method]' />
+          <map key='[service_success]' value='[swap_transactions.csv].[service_success]' />
+          <map key='[station_id (stations.csv)]' value='[stations.csv].[station_id]' />
+          <map key='[station_id]' value='[swap_transactions.csv].[station_id]' />
+          <map key='[station_name]' value='[stations.csv].[station_name]' />
+          <map key='[station_status]' value='[swap_transactions.csv].[station_status]' />
+          <map key='[swap_duration_minutes]' value='[swap_transactions.csv].[swap_duration_minutes]' />
+          <map key='[swap_id]' value='[swap_transactions.csv].[swap_id]' />
+          <map key='[timestamp]' value='[swap_transactions.csv].[timestamp]' />
+          <map key='[wait_minutes]' value='[swap_transactions.csv].[wait_minutes]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>swap_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[swap_id]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>swap_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>station_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[station_id]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>station_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>battery_soc_returned</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[battery_soc_returned]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>battery_soc_returned</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>battery_soc_issued</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[battery_soc_issued]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>battery_soc_issued</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wait_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wait_minutes]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>wait_minutes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>swap_duration_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[swap_duration_minutes]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>swap_duration_minutes</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batteries_available_before_swap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[batteries_available_before_swap]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>batteries_available_before_swap</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>station_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[station_status]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>station_status</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>downtime_minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[downtime_minutes]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>downtime_minutes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[payment_amount]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>payment_amount</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_method]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>payment_method</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>motorcycle_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[motorcycle_type]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>motorcycle_type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>service_success</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[service_success]</local-name>
+            <parent-name>[swap_transactions.csv]</parent-name>
+            <remote-alias>service_success</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>station_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[station_id (stations.csv)]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>station_id</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>station_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[station_name]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>station_name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[district]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>district</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capacity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capacity]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>capacity</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opening_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[opening_date]</local-name>
+            <parent-name>[stations.csv]</parent-name>
+            <remote-alias>opening_date</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Swap Date' datatype='date' name='[Calculation_3158453517131776]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='DATE([timestamp])' />
+      </column>
+      <column caption='Hour Number' datatype='integer' name='[Calculation_3158453517602817]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEPART(&apos;hour&apos;,[timestamp])' />
+      </column>
+      <column caption='Day Name' datatype='string' name='[Calculation_3158453518168066]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;month&apos;,[timestamp])' />
+      </column>
+      <column caption='Month' datatype='string' name='[Calculation_3158453518827523]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;month&apos;,[timestamp])' />
+      </column>
+      <column caption='Day Type' datatype='string' name='[Calculation_3158453519233028]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF DATENAME(&apos;weekday&apos;,[timestamp]) = &quot;Saturday&quot;&#10;OR DATENAME(&apos;weekday&apos;,[timestamp]) = &quot;Sunday&quot;&#10;THEN &quot;Weekend&quot;&#10;ELSE &quot;Weekday&quot;&#10;END' />
+      </column>
+      <column caption='Total Swaps' datatype='integer' name='[Calculation_3158453521510405]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([swap_id])' />
+      </column>
+      <column caption='Total Revenue' datatype='real' name='[Calculation_3158453521719302]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([payment_amount])' />
+      </column>
+      <column caption='Average Wait Time' datatype='real' name='[Calculation_3158453521936391]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([wait_minutes])' />
+      </column>
+      <column caption='Average Swap Duration' datatype='real' name='[Calculation_3158453523337224]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([swap_duration_minutes])' />
+      </column>
+      <column caption='Battery Shortage Event' datatype='integer' name='[Calculation_3158453523636233]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF[batteries_available_before_swap] &lt;= 2&#10;THEN 1&#10;ELSE 0&#10;END' />
+      </column>
+      <column caption='Battery Shortage Events' datatype='integer' name='[Calculation_3158453524205578]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_3158453523636233])' />
+      </column>
+      <column caption='Battery Shortage Rate' datatype='real' name='[Calculation_3158453528150027]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_3158453523636233]) / COUNTD([swap_id])' />
+      </column>
+      <column caption='Total Downtime Hours' datatype='real' name='[Calculation_3158453528891404]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([downtime_minutes]) / 60' />
+      </column>
+      <column caption='Average Batteries Available' datatype='real' name='[Calculation_3158453529346061]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([batteries_available_before_swap])' />
+      </column>
+      <column caption='Hour Label' datatype='string' name='[Calculation_3158454244143118]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_3158453517602817] = 0 THEN &quot;12 AM&quot;&#10;ELSEIF [Calculation_3158453517602817] &lt; 12 THEN STR([Calculation_3158453517602817]) + &quot; AM&quot;&#10;ELSEIF [Calculation_3158453517602817] = 12 THEN &quot;12 PM&quot;&#10;ELSE STR([Calculation_3158453517602817] - 12) + &quot; PM&quot;&#10;END' />
+      </column>
+      <column caption='stations.csv' datatype='table' name='[__tableau_internal_object_id__].[stations.csv_F5111970445B4314905FFF5BDC19E53F]' role='measure' type='quantitative' />
+      <column caption='swap_transactions.csv' datatype='table' name='[__tableau_internal_object_id__].[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]' role='measure' type='quantitative' />
+      <column caption='Batteries Available Before Swap' datatype='integer' name='[batteries_available_before_swap]' role='measure' type='quantitative' />
+      <column caption='Battery Soc Issued' datatype='real' name='[battery_soc_issued]' role='measure' type='quantitative' />
+      <column caption='Battery Soc Returned' datatype='real' name='[battery_soc_returned]' role='measure' type='quantitative' />
+      <column caption='Capacity' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+      <column caption='District' datatype='string' name='[district]' role='dimension' type='nominal' />
+      <column caption='Downtime Minutes' datatype='integer' name='[downtime_minutes]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Motorcycle Type' datatype='string' name='[motorcycle_type]' role='dimension' type='nominal' />
+      <column caption='Opening Date' datatype='date' name='[opening_date]' role='dimension' type='ordinal' />
+      <column caption='Payment Amount' datatype='real' name='[payment_amount]' role='measure' type='quantitative' />
+      <column caption='Payment Method' datatype='string' name='[payment_method]' role='dimension' type='nominal' />
+      <column caption='Service Success' datatype='boolean' name='[service_success]' role='dimension' type='nominal' />
+      <column caption='Station Id (Stations.Csv)' datatype='string' name='[station_id (stations.csv)]' role='dimension' type='nominal' />
+      <column caption='Station Id' datatype='string' name='[station_id]' role='dimension' type='nominal' />
+      <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+      <column caption='Station Status' datatype='string' name='[station_status]' role='dimension' type='nominal' />
+      <column caption='Swap Duration Minutes' datatype='real' name='[swap_duration_minutes]' role='measure' type='quantitative' />
+      <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+      <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+      <column caption='Wait Minutes' datatype='real' name='[wait_minutes]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_1s14fu5153sakm1gxf9ry0yqfbbs.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A' table='[Extract].[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]' type='table' />
+            <relation name='stations.csv_F5111970445B4314905FFF5BDC19E53F' table='[Extract].[stations.csv_F5111970445B4314905FFF5BDC19E53F]' type='table' />
+          </relation>
+          <cols>
+            <map key='[batteries_available_before_swap]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[batteries_available_before_swap]' />
+            <map key='[battery_soc_issued]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[battery_soc_issued]' />
+            <map key='[battery_soc_returned]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[battery_soc_returned]' />
+            <map key='[capacity]' value='[stations.csv_F5111970445B4314905FFF5BDC19E53F].[capacity]' />
+            <map key='[district]' value='[stations.csv_F5111970445B4314905FFF5BDC19E53F].[district]' />
+            <map key='[downtime_minutes]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[downtime_minutes]' />
+            <map key='[latitude]' value='[stations.csv_F5111970445B4314905FFF5BDC19E53F].[latitude]' />
+            <map key='[longitude]' value='[stations.csv_F5111970445B4314905FFF5BDC19E53F].[longitude]' />
+            <map key='[motorcycle_type]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[motorcycle_type]' />
+            <map key='[opening_date]' value='[stations.csv_F5111970445B4314905FFF5BDC19E53F].[opening_date]' />
+            <map key='[payment_amount]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[payment_amount]' />
+            <map key='[payment_method]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[payment_method]' />
+            <map key='[service_success]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[service_success]' />
+            <map key='[station_id (stations.csv)]' value='[stations.csv_F5111970445B4314905FFF5BDC19E53F].[station_id]' />
+            <map key='[station_id]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[station_id]' />
+            <map key='[station_name]' value='[stations.csv_F5111970445B4314905FFF5BDC19E53F].[station_name]' />
+            <map key='[station_status]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[station_status]' />
+            <map key='[swap_duration_minutes]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[swap_duration_minutes]' />
+            <map key='[swap_id]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[swap_id]' />
+            <map key='[timestamp]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[timestamp]' />
+            <map key='[wait_minutes]' value='[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A].[wait_minutes]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>swap_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[swap_id]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>swap_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>timestamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[timestamp]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>timestamp</remote-alias>
+              <ordinal>1</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>30000</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>station_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[station_id]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>station_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>battery_soc_returned</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[battery_soc_returned]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>battery_soc_returned</remote-alias>
+              <ordinal>3</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>836</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>battery_soc_issued</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[battery_soc_issued]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>battery_soc_issued</remote-alias>
+              <ordinal>4</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>258</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wait_minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wait_minutes]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>wait_minutes</remote-alias>
+              <ordinal>5</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>286</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>swap_duration_minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[swap_duration_minutes]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>swap_duration_minutes</remote-alias>
+              <ordinal>6</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>66</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batteries_available_before_swap</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[batteries_available_before_swap]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>batteries_available_before_swap</remote-alias>
+              <ordinal>7</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>station_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[station_status]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>station_status</remote-alias>
+              <ordinal>8</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>downtime_minutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[downtime_minutes]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>downtime_minutes</remote-alias>
+              <ordinal>9</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[payment_amount]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>payment_amount</remote-alias>
+              <ordinal>10</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2118</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payment_method]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>payment_method</remote-alias>
+              <ordinal>11</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>motorcycle_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[motorcycle_type]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>motorcycle_type</remote-alias>
+              <ordinal>12</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>service_success</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[service_success]</local-name>
+              <parent-name>[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]</parent-name>
+              <remote-alias>service_success</remote-alias>
+              <ordinal>13</ordinal>
+              <family>swap_transactions.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>station_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[station_id (stations.csv)]</local-name>
+              <parent-name>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</parent-name>
+              <remote-alias>station_id</remote-alias>
+              <ordinal>14</ordinal>
+              <family>stations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>station_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[station_name]</local-name>
+              <parent-name>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</parent-name>
+              <remote-alias>station_name</remote-alias>
+              <ordinal>15</ordinal>
+              <family>stations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>district</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[district]</local-name>
+              <parent-name>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</parent-name>
+              <remote-alias>district</remote-alias>
+              <ordinal>16</ordinal>
+              <family>stations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>17</ordinal>
+              <family>stations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>18</ordinal>
+              <family>stations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>capacity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[capacity]</local-name>
+              <parent-name>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</parent-name>
+              <remote-alias>capacity</remote-alias>
+              <ordinal>19</ordinal>
+              <family>stations.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>opening_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[opening_date]</local-name>
+              <parent-name>[stations.csv_F5111970445B4314905FFF5BDC19E53F]</parent-name>
+              <remote-alias>opening_date</remote-alias>
+              <ordinal>20</ordinal>
+              <family>stations.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-hidden-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='stations.csv' id='stations.csv_F5111970445B4314905FFF5BDC19E53F'>
+            <properties context=''>
+              <relation connection='textscan.1bsx7fi1f0apmb12zjqs71dwd7hq' name='stations.csv' table='[stations#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='station_id' ordinal='0' />
+                  <column datatype='string' name='station_name' ordinal='1' />
+                  <column datatype='string' name='district' ordinal='2' />
+                  <column datatype='real' name='latitude' ordinal='3' />
+                  <column datatype='real' name='longitude' ordinal='4' />
+                  <column datatype='integer' name='capacity' ordinal='5' />
+                  <column datatype='date' name='opening_date' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='stations.csv_F5111970445B4314905FFF5BDC19E53F' table='[Extract].[stations.csv_F5111970445B4314905FFF5BDC19E53F]' type='table' />
+            </properties>
+          </object>
+          <object caption='swap_transactions.csv' id='swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A'>
+            <properties context=''>
+              <relation connection='textscan.1bsx7fi1f0apmb12zjqs71dwd7hq' name='swap_transactions.csv' table='[swap_transactions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='swap_id' ordinal='0' />
+                  <column datatype='datetime' name='timestamp' ordinal='1' />
+                  <column datatype='string' name='station_id' ordinal='2' />
+                  <column datatype='real' name='battery_soc_returned' ordinal='3' />
+                  <column datatype='real' name='battery_soc_issued' ordinal='4' />
+                  <column datatype='real' name='wait_minutes' ordinal='5' />
+                  <column datatype='real' name='swap_duration_minutes' ordinal='6' />
+                  <column datatype='integer' name='batteries_available_before_swap' ordinal='7' />
+                  <column datatype='string' name='station_status' ordinal='8' />
+                  <column datatype='integer' name='downtime_minutes' ordinal='9' />
+                  <column datatype='real' name='payment_amount' ordinal='10' />
+                  <column datatype='string' name='payment_method' ordinal='11' />
+                  <column datatype='string' name='motorcycle_type' ordinal='12' />
+                  <column datatype='boolean' name='service_success' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A' table='[Extract].[swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[station_id]' />
+              <expression op='[station_id (stations.csv)]' />
+            </expression>
+            <first-end-point object-id='swap_transactions.csv_27209E3514BC4C619A87637EF3E98F5A' />
+            <second-end-point object-id='stations.csv_F5111970445B4314905FFF5BDC19E53F' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Average Wait time by Station'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Average Wait Time' datatype='real' name='[Calculation_3158453521936391]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([wait_minutes])' />
+            </column>
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453521936391]' derivation='User' name='[usr:Calculation_3158453521936391:qk]' pivot='key' type='quantitative' />
+            <column caption='Wait Minutes' datatype='real' name='[wait_minutes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' scope='cols' value='Average Wait Time (Minutes)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' value='*0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]</cols>
+      </table>
+      <simple-id uuid='{9B259FA7-2795-40EB-89CF-D2893ADC659A}' />
+    </worksheet>
+    <worksheet name='Battery Availability by Hour '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Hour Number' datatype='integer' name='[Calculation_3158453517602817]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEPART(&apos;hour&apos;,[timestamp])' />
+            </column>
+            <column caption='Average Batteries Available' datatype='real' name='[Calculation_3158453529346061]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([batteries_available_before_swap])' />
+            </column>
+            <column caption='Hour Label' datatype='string' name='[Calculation_3158454244143118]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_3158453517602817] = 0 THEN &quot;12 AM&quot;&#10;ELSEIF [Calculation_3158453517602817] &lt; 12 THEN STR([Calculation_3158453517602817]) + &quot; AM&quot;&#10;ELSEIF [Calculation_3158453517602817] = 12 THEN &quot;12 PM&quot;&#10;ELSE STR([Calculation_3158453517602817] - 12) + &quot; PM&quot;&#10;END' />
+            </column>
+            <column caption='Batteries Available Before Swap' datatype='integer' name='[batteries_available_before_swap]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_3158453517602817]' derivation='Min' name='[min:Calculation_3158453517602817:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158454244143118]' derivation='None' name='[none:Calculation_3158454244143118:nk]' pivot='key' type='nominal' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_3158453529346061]' derivation='User' name='[usr:Calculation_3158453529346061:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:Calculation_3158454244143118:nk]' direction='ASC' using='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[min:Calculation_3158453517602817:qk]' />
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453529346061:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453529346061:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453529346061:qk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:Calculation_3158454244143118:nk]</cols>
+      </table>
+      <simple-id uuid='{E9683498-636B-4839-A0CE-3E707199D4F4}' />
+    </worksheet>
+    <worksheet name='Daily Swap Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Swap Date' datatype='date' name='[Calculation_3158453517131776]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATE([timestamp])' />
+            </column>
+            <column caption='Total Swaps' datatype='integer' name='[Calculation_3158453521510405]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([swap_id])' />
+            </column>
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453517131776]' derivation='Day-Trunc' name='[tdy:Calculation_3158453517131776:qk]' pivot='key' type='quantitative' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_3158453521510405]' derivation='User' name='[usr:Calculation_3158453521510405:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='auto' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#298fe9' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[tdy:Calculation_3158453517131776:qk]</cols>
+      </table>
+      <simple-id uuid='{2EA626B1-34F0-4412-88BA-2A7BF9DBF3A0}' />
+    </worksheet>
+    <worksheet name='Downtime by Station'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Total Downtime Hours' datatype='real' name='[Calculation_3158453528891404]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([downtime_minutes]) / 60' />
+            </column>
+            <column caption='Downtime Minutes' datatype='integer' name='[downtime_minutes]' role='measure' type='quantitative' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453528891404]' derivation='User' name='[usr:Calculation_3158453528891404:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' direction='DESC' using='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528891404:qk]' />
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528891404:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528891404:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528891404:qk]</cols>
+      </table>
+      <simple-id uuid='{E7A6B46B-7B75-4CEC-87B0-40A99CF19A54}' />
+    </worksheet>
+    <worksheet name='Hourly Demand'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Hour Number' datatype='integer' name='[Calculation_3158453517602817]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEPART(&apos;hour&apos;,[timestamp])' />
+            </column>
+            <column caption='Total Swaps' datatype='integer' name='[Calculation_3158453521510405]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([swap_id])' />
+            </column>
+            <column caption='Hour Label' datatype='string' name='[Calculation_3158454244143118]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_3158453517602817] = 0 THEN &quot;12 AM&quot;&#10;ELSEIF [Calculation_3158453517602817] &lt; 12 THEN STR([Calculation_3158453517602817]) + &quot; AM&quot;&#10;ELSEIF [Calculation_3158453517602817] = 12 THEN &quot;12 PM&quot;&#10;ELSE STR([Calculation_3158453517602817] - 12) + &quot; PM&quot;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_3158454244143118]' derivation='None' name='[none:Calculation_3158454244143118:nk]' pivot='key' type='nominal' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453517602817]' derivation='Sum' name='[sum:Calculation_3158453517602817:qk]' pivot='key' type='quantitative' />
+            <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_3158453521510405]' derivation='User' name='[usr:Calculation_3158453521510405:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:Calculation_3158454244143118:nk]' direction='ASC' using='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[sum:Calculation_3158453517602817:qk]' />
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels-decoration'>
+            <format attr='vertical-align' value='auto' />
+            <format attr='text-align' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:Calculation_3158454244143118:nk]' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:Calculation_3158454244143118:nk]</cols>
+      </table>
+      <simple-id uuid='{24948AAC-E667-42CC-81ED-28790D8DA81F}' />
+    </worksheet>
+    <worksheet name='KPI-Average Wait Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Average Wait Time' datatype='real' name='[Calculation_3158453521936391]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([wait_minutes])' />
+            </column>
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453521936391]' derivation='User' name='[usr:Calculation_3158453521936391:qk]' pivot='key' type='quantitative' />
+            <column caption='Wait Minutes' datatype='real' name='[wait_minutes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='color' value='#298fe9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='28'><![CDATA[<[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='14'>Avg Wait Time</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{187A24C4-F538-4019-BAC8-EA583FE90BA6}' />
+    </worksheet>
+    <worksheet name='KPI-Battery Shortage Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Battery Shortage Event' datatype='integer' name='[Calculation_3158453523636233]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF[batteries_available_before_swap] &lt;= 2&#10;THEN 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column caption='Battery Shortage Rate' datatype='real' name='[Calculation_3158453528150027]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_3158453523636233]) / COUNTD([swap_id])' />
+            </column>
+            <column caption='Batteries Available Before Swap' datatype='integer' name='[batteries_available_before_swap]' role='measure' type='quantitative' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453528150027]' derivation='User' name='[usr:Calculation_3158453528150027:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' value='p0.0%' />
+            <format attr='color' value='#298fe9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='28'><![CDATA[<[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='14'>Shortage Rate</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='0.51574587821960449' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{64837334-31CB-4399-8BF7-590D062A4A63}' />
+    </worksheet>
+    <worksheet name='KPI-Downtime'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Total Downtime Hours' datatype='real' name='[Calculation_3158453528891404]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([downtime_minutes]) / 60' />
+            </column>
+            <column caption='Downtime Minutes' datatype='integer' name='[downtime_minutes]' role='measure' type='quantitative' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453528891404]' derivation='User' name='[usr:Calculation_3158453528891404:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='color' value='#298fe9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528891404:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='28'><![CDATA[<[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528891404:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='14'>Downtime Hours</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.51574587821960449' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{449AF719-2331-4A86-A1C8-CAD4B479534C}' />
+    </worksheet>
+    <worksheet name='KPI-Total Revenue'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Total Revenue' datatype='real' name='[Calculation_3158453521719302]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([payment_amount])' />
+            </column>
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Payment Amount' datatype='real' name='[payment_amount]' role='measure' type='quantitative' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453521719302]' derivation='User' name='[usr:Calculation_3158453521719302:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521719302:qk]' value='c&quot;GHS&quot;#,##0,,.00M;-&quot;GHS&quot;#,##0,,.00M' />
+            <format attr='color' value='#298fe9' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521719302:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='28'><![CDATA[<[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521719302:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='14'>Total Revenue</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0F172F27-A667-411E-AEA2-D2DB511E3C0A}' />
+    </worksheet>
+    <worksheet name='KPI-Total Swaps'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Total Swaps' datatype='integer' name='[Calculation_3158453521510405]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([swap_id])' />
+            </column>
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453521510405]' derivation='User' name='[usr:Calculation_3158453521510405:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='color' value='#298fe9' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='28'><![CDATA[<[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='14'>Total Swaps</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{208C66AB-CBC1-4184-8F4D-D3EC70CF287F}' />
+    </worksheet>
+    <worksheet name='Shortage Rate by Station'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Battery Shortage Event' datatype='integer' name='[Calculation_3158453523636233]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF[batteries_available_before_swap] &lt;= 2&#10;THEN 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column caption='Battery Shortage Rate' datatype='real' name='[Calculation_3158453528150027]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_3158453523636233]) / COUNTD([swap_id])' />
+            </column>
+            <column caption='Batteries Available Before Swap' datatype='integer' name='[batteries_available_before_swap]' role='measure' type='quantitative' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453528150027]' derivation='User' name='[usr:Calculation_3158453528150027:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]</cols>
+      </table>
+      <simple-id uuid='{BF608B14-351B-4392-A814-04C75FB5C0B6}' />
+    </worksheet>
+    <worksheet name='Shortage Rate vs Wait Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Total Swaps' datatype='integer' name='[Calculation_3158453521510405]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([swap_id])' />
+            </column>
+            <column caption='Average Wait Time' datatype='real' name='[Calculation_3158453521936391]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([wait_minutes])' />
+            </column>
+            <column caption='Battery Shortage Event' datatype='integer' name='[Calculation_3158453523636233]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF[batteries_available_before_swap] &lt;= 2&#10;THEN 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column caption='Battery Shortage Rate' datatype='real' name='[Calculation_3158453528150027]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_3158453523636233]) / COUNTD([swap_id])' />
+            </column>
+            <column caption='Batteries Available Before Swap' datatype='integer' name='[batteries_available_before_swap]' role='measure' type='quantitative' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453521510405]' derivation='User' name='[usr:Calculation_3158453521510405:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158453521936391]' derivation='User' name='[usr:Calculation_3158453521936391:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158453528150027]' derivation='User' name='[usr:Calculation_3158453528150027:qk]' pivot='key' type='quantitative' />
+            <column caption='Wait Minutes' datatype='real' name='[wait_minutes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' scope='rows' value='Average Wait Time(Minutes)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]' />
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' />
+              <lod column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]</cols>
+      </table>
+      <simple-id uuid='{4DA9530C-AB12-4D2B-86A0-704C1B18E708}' />
+    </worksheet>
+    <worksheet name='Station Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Total Swaps' datatype='integer' name='[Calculation_3158453521510405]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([swap_id])' />
+            </column>
+            <column caption='Total Revenue' datatype='real' name='[Calculation_3158453521719302]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([payment_amount])' />
+            </column>
+            <column caption='Average Wait Time' datatype='real' name='[Calculation_3158453521936391]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([wait_minutes])' />
+            </column>
+            <column caption='Battery Shortage Event' datatype='integer' name='[Calculation_3158453523636233]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF[batteries_available_before_swap] &lt;= 2&#10;THEN 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column caption='Battery Shortage Rate' datatype='real' name='[Calculation_3158453528150027]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_3158453523636233]) / COUNTD([swap_id])' />
+            </column>
+            <column caption='Total Downtime Hours' datatype='real' name='[Calculation_3158453528891404]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([downtime_minutes]) / 60' />
+            </column>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column caption='Batteries Available Before Swap' datatype='integer' name='[batteries_available_before_swap]' role='measure' type='quantitative' />
+            <column caption='Downtime Minutes' datatype='integer' name='[downtime_minutes]' role='measure' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Payment Amount' datatype='real' name='[payment_amount]' role='measure' type='quantitative' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453521510405]' derivation='User' name='[usr:Calculation_3158453521510405:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158453521719302]' derivation='User' name='[usr:Calculation_3158453521719302:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158453521936391]' derivation='User' name='[usr:Calculation_3158453521936391:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158453528150027]' derivation='User' name='[usr:Calculation_3158453528150027:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158453528891404]' derivation='User' name='[usr:Calculation_3158453528891404:qk]' pivot='key' type='quantitative' />
+            <column caption='Wait Minutes' datatype='real' name='[wait_minutes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[avg:longitude:qk]' field-type='quantitative' max='13168.504207102145' min='-78762.610630428739' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[avg:latitude:qk]' field-type='quantitative' max='644707.31676199834' min='620526.92562659911' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]' />
+              <tooltip column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]' />
+              <tooltip column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' />
+              <tooltip column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' />
+              <tooltip column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528891404:qk]' />
+              <tooltip column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521719302:qk]' />
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' />
+              <lod column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#298fe9' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[avg:latitude:qk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{AAAF4E35-408E-43F8-AE1E-018FDE3314BF}' />
+    </worksheet>
+    <worksheet name='Station Performance Matrix'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Total Swaps' datatype='integer' name='[Calculation_3158453521510405]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([swap_id])' />
+            </column>
+            <column caption='Average Wait Time' datatype='real' name='[Calculation_3158453521936391]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([wait_minutes])' />
+            </column>
+            <column caption='Battery Shortage Event' datatype='integer' name='[Calculation_3158453523636233]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF[batteries_available_before_swap] &lt;= 2&#10;THEN 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column caption='Battery Shortage Rate' datatype='real' name='[Calculation_3158453528150027]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_3158453523636233]) / COUNTD([swap_id])' />
+            </column>
+            <column caption='Batteries Available Before Swap' datatype='integer' name='[batteries_available_before_swap]' role='measure' type='quantitative' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453521510405]' derivation='User' name='[usr:Calculation_3158453521510405:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158453521936391]' derivation='User' name='[usr:Calculation_3158453521936391:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158453528150027]' derivation='User' name='[usr:Calculation_3158453528150027:qk]' pivot='key' type='quantitative' />
+            <column caption='Wait Minutes' datatype='real' name='[wait_minutes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' />
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' />
+              <lod column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]</cols>
+      </table>
+      <simple-id uuid='{70B2EA5A-4F73-49E2-A9AB-A3112B516A55}' />
+    </worksheet>
+    <worksheet name='Swaps by Station'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Total Swaps' datatype='integer' name='[Calculation_3158453521510405]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([swap_id])' />
+            </column>
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Swap Id' datatype='string' name='[swap_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3158453521510405]' derivation='User' name='[usr:Calculation_3158453521510405:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#75a1c7' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]</cols>
+      </table>
+      <simple-id uuid='{054EDB7D-326C-4CE6-8179-1A38D34CFC5B}' />
+    </worksheet>
+    <worksheet name='Wait Time by Hour'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+            <column caption='Hour Number' datatype='integer' name='[Calculation_3158453517602817]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEPART(&apos;hour&apos;,[timestamp])' />
+            </column>
+            <column caption='Average Wait Time' datatype='real' name='[Calculation_3158453521936391]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([wait_minutes])' />
+            </column>
+            <column caption='Hour Label' datatype='string' name='[Calculation_3158454244143118]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_3158453517602817] = 0 THEN &quot;12 AM&quot;&#10;ELSEIF [Calculation_3158453517602817] &lt; 12 THEN STR([Calculation_3158453517602817]) + &quot; AM&quot;&#10;ELSEIF [Calculation_3158453517602817] = 12 THEN &quot;12 PM&quot;&#10;ELSE STR([Calculation_3158453517602817] - 12) + &quot; PM&quot;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_3158453517602817]' derivation='Min' name='[min:Calculation_3158453517602817:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3158454244143118]' derivation='None' name='[none:Calculation_3158454244143118:nk]' pivot='key' type='nominal' />
+            <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_3158453521936391]' derivation='User' name='[usr:Calculation_3158453521936391:qk]' pivot='key' type='quantitative' />
+            <column caption='Wait Minutes' datatype='real' name='[wait_minutes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:Calculation_3158454244143118:nk]' direction='ASC' using='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[min:Calculation_3158453517602817:qk]' />
+          <filter class='categorical' column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:station_name:nk]' member='&quot;Abelenkpe&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' scope='rows' value='Average Wait Time(minutes)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521936391:qk]</rows>
+        <cols>[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:Calculation_3158454244143118:nk]</cols>
+      </table>
+      <simple-id uuid='{86C9B03E-7454-4A3F-A6B9-D5A2C309183F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='EV Swap Network Performance Intelligence'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+        <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+        <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='18625' id='6' name='KPI-Total Swaps' show-title='false' w='17750' x='0' y='625'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='18375' id='7' name='KPI-Total Revenue' show-title='false' w='18750' x='18333' y='750'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='18500' id='8' name='KPI-Average Wait Time' show-title='false' w='21083' x='37750' y='750'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='18500' id='9' name='KPI-Battery Shortage Rate' show-title='false' w='19500' x='59500' y='750'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='18250' id='10' name='KPI-Downtime' show-title='false' w='19167' x='79833' y='875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='38375' id='11' name='Daily Swap Trend' w='91083' x='83' y='20500'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='14072' id='12' mode='checkdropdown' name='Daily Swap Trend' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' type-v2='filter' w='7390' x='91667' y='21544'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='37000' id='13' name='Swaps by Station' w='42417' x='333' y='60750'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='37000' id='14' name='Hourly Demand' w='56000' x='43500' y='60750'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98008' id='21' param='vert' type-v2='layout-flow' w='98742' x='629' y='996'>
+                <zone fixed-size='147' h='18625' id='6' is-fixed='true' name='KPI-Total Swaps' show-title='false' w='17750' x='0' y='625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='145' h='18375' id='7' is-fixed='true' name='KPI-Total Revenue' show-title='false' w='18750' x='18333' y='750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='146' h='18500' id='8' is-fixed='true' name='KPI-Average Wait Time' show-title='false' w='21083' x='37750' y='750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='146' h='18500' id='9' is-fixed='true' name='KPI-Battery Shortage Rate' show-title='false' w='19500' x='59500' y='750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='18250' id='10' is-fixed='true' name='KPI-Downtime' show-title='false' w='19167' x='79833' y='875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14072' id='12' mode='checkdropdown' name='Daily Swap Trend' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' type-v2='filter' w='7390' x='91667' y='21544'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38375' id='11' is-fixed='true' name='Daily Swap Trend' w='91083' x='83' y='20500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37000' id='13' is-fixed='true' name='Swaps by Station' w='42417' x='333' y='60750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37000' id='14' is-fixed='true' name='Hourly Demand' w='56000' x='43500' y='60750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{761CCFC0-3B4E-4898-817D-2460E915E5C0}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Operational Insights'>
+      <style />
+      <size maxheight='803' maxwidth='1272' minheight='803' minwidth='1272' preset-index='17' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98008' id='9' param='vert' type-v2='layout-flow' w='98742' x='629' y='996'>
+            <zone h='5230' id='11' type-v2='title' w='98742' x='629' y='996'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92778' id='10' type-v2='layout-basic' w='98742' x='629' y='6226' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='42217' id='12' name='Station Performance Matrix' w='42296' x='50472' y='55044'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='15691' id='13' name='Station Performance Matrix' pane-specification-id='0' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' type-v2='size' w='5975' x='93160' y='55293'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='42466' id='14' name='Shortage Rate vs Wait Time' w='41116' x='1651' y='54670'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='15816' id='15' name='Shortage Rate vs Wait Time' pane-specification-id='0' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]' type-v2='size' w='5739' x='43160' y='54919'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='45081' id='16' name='Station Map' w='95126' x='1965' y='7597' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98008' id='23' param='vert' type-v2='layout-flow' w='98742' x='629' y='996'>
+                <zone h='5230' id='11' type-v2='title' w='98742' x='629' y='996'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45081' id='16' is-fixed='true' name='Station Map' w='95126' x='1965' y='7597'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42466' id='14' is-fixed='true' name='Shortage Rate vs Wait Time' w='41116' x='1651' y='54670'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15816' id='15' name='Shortage Rate vs Wait Time' pane-specification-id='0' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]' type-v2='size' w='5739' x='43160' y='54919'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42217' id='12' is-fixed='true' name='Station Performance Matrix' w='42296' x='50472' y='55044'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15691' id='13' name='Station Performance Matrix' pane-specification-id='0' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' type-v2='size' w='5975' x='93160' y='55293'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{239EE6D2-77B3-491C-820E-57EC502B959F}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Station Operations'>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='text-align' value='center' />
+          <format attr='font-weight' value='bold' />
+          <format attr='font-size' value='20' />
+        </style-rule>
+      </style>
+      <size maxheight='803' maxwidth='1272' minheight='803' minwidth='1272' preset-index='1' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='swap_transactions' name='federated.1dofqpe05q9hcf11nmjnx0py8qc8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1dofqpe05q9hcf11nmjnx0py8qc8'>
+        <column-instance column='[station_name]' derivation='None' name='[none:station_name:nk]' pivot='key' type='nominal' />
+        <column caption='Station Name' datatype='string' name='[station_name]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone fixed-size='28' h='4981' id='11' is-fixed='true' type-v2='title' w='98742' x='629' y='996'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='93027' id='8' type-v2='layout-basic' w='98742' x='629' y='5977' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='32254' id='5' name='Battery Availability by Hour ' w='45912' x='2123' y='65504'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='3861' id='6' mode='dropdown' name='Battery Availability by Hour ' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' type-v2='filter' w='26572' x='35535' y='6227' />
+        <zone h='17310' id='12' name='KPI-Total Swaps' show-title='false' w='20519' x='1808' y='12080'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='16936' id='13' name='KPI-Average Wait Time' show-title='false' w='21934' x='24057' y='12453'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='17310' id='14' name='KPI-Battery Shortage Rate' show-title='false' w='25157' x='48270' y='12204'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='17310' id='15' name='KPI-Downtime' show-title='false' w='23192' x='75157' y='11955'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='31507' id='16' name='Hourly Demand' w='46069' x='1887' y='31631'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='31258' id='17' name='Downtime by Station' w='48742' x='49214' y='31631'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='32130' id='18' name='Wait Time by Hour' w='48506' x='49371' y='65380'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98008' id='25' param='vert' type-v2='layout-flow' w='98742' x='629' y='996'>
+                <zone fixed-size='28' h='4981' id='11' type-v2='title' w='98742' x='629' y='996'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='137' h='17310' id='15' is-fixed='true' name='KPI-Downtime' show-title='false' w='23192' x='75157' y='11955'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='137' h='17310' id='12' is-fixed='true' name='KPI-Total Swaps' show-title='false' w='20519' x='1808' y='12080'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='137' h='17310' id='14' is-fixed='true' name='KPI-Battery Shortage Rate' show-title='false' w='25157' x='48270' y='12204'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='134' h='16936' id='13' is-fixed='true' name='KPI-Average Wait Time' show-title='false' w='21934' x='24057' y='12453'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='251' h='31507' id='16' is-fixed='true' name='Hourly Demand' w='46069' x='1887' y='31631'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='249' h='31258' id='17' is-fixed='true' name='Downtime by Station' w='48742' x='49214' y='31631'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='32130' id='18' is-fixed='true' name='Wait Time by Hour' w='48506' x='49371' y='65380'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3861' id='6' mode='dropdown' name='Battery Availability by Hour ' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' type-v2='filter' w='26572' x='35535' y='6227'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='257' h='32254' id='5' is-fixed='true' name='Battery Availability by Hour ' w='45912' x='2123' y='65504'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A31CD68A-8BF3-460B-8EA3-09E0EDDA5F2A}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='51'>
+    <window class='dashboard' name='EV Swap Network Performance Intelligence' tab-color='#4f779a'>
+      <viewpoints>
+        <viewpoint name='Daily Swap Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hourly Demand'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-Average Wait Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-Battery Shortage Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-Downtime'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-Total Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-Total Swaps'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Swaps by Station' />
+      </viewpoints>
+      <active id='13' />
+      <device-preview visible='true' />
+      <simple-id uuid='{0E0907B2-4E99-4FE1-8BA6-6519C52B0692}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Station Operations'>
+      <viewpoints>
+        <viewpoint name='Battery Availability by Hour '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Downtime by Station' />
+        <viewpoint name='Hourly Demand'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-Average Wait Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-Battery Shortage Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-Downtime'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-Total Swaps'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Wait Time by Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <device-preview visible='true' />
+      <simple-id uuid='{8417D4B8-C009-4768-9F48-4F06C6C57E00}' />
+    </window>
+    <window class='dashboard' name='Operational Insights'>
+      <viewpoints>
+        <viewpoint name='Shortage Rate vs Wait Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Station Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Station Performance Matrix'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='16' />
+      <device-preview visible='true' />
+      <simple-id uuid='{B64BC528-7C8A-40F6-938F-3EC909965418}' />
+    </window>
+    <window class='worksheet' name='KPI-Total Swaps'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9AB74339-C758-4B39-B461-624DDCEB0F18}' />
+    </window>
+    <window class='worksheet' name='KPI-Total Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4D2BD4CE-B6AD-4D2B-82FA-99082F624D20}' />
+    </window>
+    <window class='worksheet' name='KPI-Average Wait Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{80B5670D-7CA5-452C-A3D5-04D7893D27A5}' />
+    </window>
+    <window class='worksheet' name='KPI-Battery Shortage Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A19AA7F3-F224-4395-A2E7-FE399B666096}' />
+    </window>
+    <window class='worksheet' name='KPI-Downtime'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E9F8D8C1-2CB9-41AE-BDD1-EA0A3023B0E4}' />
+    </window>
+    <window class='worksheet' name='Daily Swap Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{400E5E0D-8480-4010-B1C4-83D26C0F71BF}' />
+    </window>
+    <window class='worksheet' name='Swaps by Station'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{573515B7-B5AB-416E-B2A2-68FA80472ED8}' />
+    </window>
+    <window class='worksheet' name='Hourly Demand'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D18831F9-D7E0-4491-AD87-37F52084505C}' />
+    </window>
+    <window class='worksheet' name='Average Wait time by Station'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E1A80490-88F2-4990-8F7B-36F7D75CF1D8}' />
+    </window>
+    <window class='worksheet' name='Shortage Rate by Station'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CF861DE9-15E4-4804-9582-37DCB3749FCB}' />
+    </window>
+    <window class='worksheet' name='Battery Availability by Hour '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D27940F4-97D8-46F5-9445-0ED8F4AFAE3B}' />
+    </window>
+    <window class='worksheet' name='Wait Time by Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[none:station_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8934FFC6-557B-479C-BC7A-A305E1D71963}' />
+    </window>
+    <window class='worksheet' name='Downtime by Station'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66B698B1-F064-4450-B258-355E226593A4}' />
+    </window>
+    <window class='worksheet' name='Station Performance Matrix'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D7F98527-E0D3-43C4-BDCB-82E08DCD6D80}' />
+    </window>
+    <window class='worksheet' name='Shortage Rate vs Wait Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA3DAE03-E439-46A1-AE43-AAD9A4CA7F90}' />
+    </window>
+    <window class='worksheet' name='Station Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453521510405:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{B392EE0E-2266-41FC-8044-0A9F511A6353}' />
+    </window>
+  </windows>
+</workbook>
