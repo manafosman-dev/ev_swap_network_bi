@@ -1932,8 +1932,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[avg:longitude:qk]' field-type='quantitative' max='13168.504207102145' min='-78762.610630428739' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[avg:latitude:qk]' field-type='quantitative' max='644707.31676199834' min='620526.92562659911' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[avg:longitude:qk]' field-type='quantitative' max='28816.275518624781' min='-146586.0143538288' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[avg:latitude:qk]' field-type='quantitative' max='662105.92966077081' min='614664.61734250293' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='label'>
             <format attr='text-format' field='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' value='p0.0%' />
@@ -2372,7 +2372,7 @@
             <format attr='border-width' value='1' />
           </zone-style>
         </zone>
-        <zone h='15691' id='13' name='Station Performance Matrix' pane-specification-id='0' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' type-v2='size' w='5975' x='93160' y='55293'>
+        <zone h='15442' id='13' name='Station Performance Matrix' pane-specification-id='0' param='[federated.1dofqpe05q9hcf11nmjnx0py8qc8].[usr:Calculation_3158453528150027:qk]' type-v2='size' w='5425' x='93160' y='55293'>
           <zone-style>
             <format attr='border-color' value='#000000' />
             <format attr='border-style' value='solid' />
@@ -2393,7 +2393,7 @@
             <format attr='border-width' value='1' />
           </zone-style>
         </zone>
-        <zone h='45081' id='16' name='Station Map' w='95126' x='1965' y='7597' />
+        <zone h='46202' id='16' name='Station Map' w='95126' x='1965' y='7597' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
@@ -2670,7 +2670,7 @@
       <simple-id uuid='{A31CD68A-8BF3-460B-8EA3-09E0EDDA5F2A}' />
     </dashboard>
   </dashboards>
-  <windows pres-mode='true' source-height='51'>
+  <windows source-height='51'>
     <window class='dashboard' name='EV Swap Network Performance Intelligence' tab-color='#4f779a'>
       <viewpoints>
         <viewpoint name='Daily Swap Trend'>
@@ -2700,7 +2700,7 @@
       <device-preview visible='true' />
       <simple-id uuid='{0E0907B2-4E99-4FE1-8BA6-6519C52B0692}' />
     </window>
-    <window class='dashboard' maximized='true' name='Station Operations'>
+    <window class='dashboard' name='Station Operations'>
       <viewpoints>
         <viewpoint name='Battery Availability by Hour '>
           <zoom type='entire-view' />
@@ -2729,7 +2729,7 @@
       <device-preview visible='true' />
       <simple-id uuid='{8417D4B8-C009-4768-9F48-4F06C6C57E00}' />
     </window>
-    <window class='dashboard' name='Operational Insights'>
+    <window class='dashboard' maximized='true' name='Operational Insights'>
       <viewpoints>
         <viewpoint name='Shortage Rate vs Wait Time'>
           <zoom type='entire-view' />
@@ -2741,7 +2741,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='16' />
+      <active id='-1' />
       <device-preview visible='true' />
       <simple-id uuid='{B64BC528-7C8A-40F6-938F-3EC909965418}' />
     </window>
